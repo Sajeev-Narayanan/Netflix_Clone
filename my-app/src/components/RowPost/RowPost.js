@@ -13,7 +13,7 @@ function RowPost(props) {
         setMovies(response.data.results);
       })
       .catch(err => {
-        // alert("Error Occured");
+        alert("Error Occured");
       });
   }, []);
 
@@ -22,7 +22,7 @@ function RowPost(props) {
     width: '100%',
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
-      autoplay: 0,
+      autoplay: 1,
     },
   };
 
